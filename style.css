@@ -22,8 +22,8 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --background-color:  #1F2937;
-  --primary-color-card:#f0f4ff;
+  --background-color: #1F2937;
+  --primary-color-card: #f0f4ff;
   --primary-color-1: #F9FAF8;
   --primary-color-2: #3882F6;
   --primary-color-3: #1F2937;
@@ -34,14 +34,13 @@ body {
   font-family: "Roboto";
 }
 ::-webkit-scrollbar {
-  width: 16px;
+  width: 1em;
 }
 ::-webkit-scrollbar-track {
   background-color: #e4e4e4;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--background-color);
-  border-radius: 18px;
 }
 
 .header {
@@ -62,9 +61,14 @@ section.presentation,
 }
 .nav-left {
   display: flex;
+  cursor: pointer;
 }
 .nav-left img {
   object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+.nav-left img:hover {
+  transform: scale(1.1);
 }
 .nav-right a {
   position: relative;
@@ -148,7 +152,8 @@ section.presentation {
   border-radius: 5px;
 }
 .actions {
-  margin: 150px auto 0;
+  margin: 50px auto 0;
+  padding-top: 100px;
 }
 .actions h1 {
   text-align: center;
@@ -170,6 +175,7 @@ section.presentation {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  font-size: 1.1em;
 }
 .card {
   position: relative;
@@ -252,7 +258,7 @@ section.change {
   min-width: 45%;
   background: var(--primary-color-2);
   margin: auto;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 40px 80px;
   color: var(--primary-color-1);
 }
@@ -274,11 +280,12 @@ section .sign-up {
 }
 section.accordion {
   width: 45%;
-  margin: 150px auto 0;
+  margin: 50px auto 0;
+  padding-top: 100px;
   min-height: 250px;
 }
 .tabs {
-  border-radius: 3px;
+  border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
