@@ -100,9 +100,9 @@ section.presentation,
 }
 section.presentation {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
   margin-top: 80px;
-  justify-content: space-between;
 }
 section.presentation {
   padding: 80px 0;
@@ -112,7 +112,6 @@ section.presentation {
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: 100%;
   background: var(--primary-color-3);
   z-index: 1;
 }
@@ -120,7 +119,7 @@ section.presentation {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 300px;
+  max-width: 350px;
   min-height: 215px;
   color: var(--primary-color-1);
 }
@@ -141,7 +140,7 @@ section.presentation {
   cursor: pointer;
 }
 .right-container {
-  min-width: 350px;
+  min-width: 550px;
   height: 215px;
   box-shadow: 0px 0px 6px 0px rgba(21, 255, 0, 0.75);
 }
