@@ -41,8 +41,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 60%;
   margin: auto;
+}
+.top-nav,
+section.presentation,
+.actions,
+.text {
+  max-width: 60%;
+}
+.nav-left {
+  display: flex;
+}
+.nav-left img {
+  object-fit: cover;
 }
 .nav-right a {
   text-decoration: none;
@@ -62,7 +73,6 @@ section.presentation {
   justify-content: space-between;
 }
 section.presentation {
-  max-width: 60%;
   padding: 80px 0;
   margin: auto;
 }
@@ -110,7 +120,6 @@ section.presentation {
   border-radius: 5px;
 }
 .actions {
-  max-width: 60%;
   margin: 150px auto 0;
 }
 .actions h1 {
@@ -183,14 +192,12 @@ section.presentation {
 .cb-text p {
   line-height: 1.1;
 }
-
 section.inspiration {
   background: var(--primary-color-4);
   padding: 60px;
   margin: 150px 0;
 }
 .text {
-  max-width: 60%;
   margin: auto;
 }
 .inspiration .quote {
