@@ -56,7 +56,7 @@ body {
 .top-nav,
 section.presentation,
 .actions,
-.text {
+blockquote {
   max-width: 60%;
 }
 .nav-left {
@@ -231,7 +231,7 @@ section.inspiration {
   padding: 60px;
   margin: 150px 0;
 }
-.text {
+blockquote {
   margin: auto;
 }
 .inspiration .quote {
